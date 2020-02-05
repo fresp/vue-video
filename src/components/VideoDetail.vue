@@ -9,11 +9,11 @@
     </div>
     <div id="example">
       
-      <button v-if="liked === false" @click="doLiked">{{counterLike}} Like</button>
-      <button v-if="liked === true" @click="doUnliked">{{counterLike}} Like</button>
+      <button v-if="liked === false" @click="doLiked">{{counterLike}} <font-awesome-icon class="icon-inactive" icon="thumbs-up" /></button>
+      <button v-if="liked === true" @click="doUnliked">{{counterLike}} <font-awesome-icon class="icon-active" icon="thumbs-up" /></button>
 
-      <button v-if="disliked === false" @click="doDisliked">{{counterDislike}} Dislike</button>
-      <button v-if="disliked === true" @click="doUnDisliked">{{counterDislike}} Dislike</button>
+      <button v-if="disliked === false" @click="doDisliked">{{counterDislike}} <font-awesome-icon class="icon-inactive" icon="thumbs-down" /></button>
+      <button v-if="disliked === true" @click="doUnDisliked">{{counterDislike}} <font-awesome-icon class="icon-active" icon="thumbs-down" /></button>
     </div>
     <div class="details" v-for="(data, index) in this.comment_list" :key="index">
       <p><span class="font-weight-bold">{{ data.name }}: </span>{{ data.content }}</p>
@@ -157,5 +157,11 @@ export default {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 2px;
+  }
+  .icon-inactive{
+    color: #909090;
+  }
+  .icon-active {
+    color: #000
   }
 </style>
