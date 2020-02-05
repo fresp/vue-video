@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input @input="onInput"/>
+    <input @input="onInput" placeholder="Search Video..."/>
   </div>
 </template>
 
