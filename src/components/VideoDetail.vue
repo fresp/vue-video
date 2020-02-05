@@ -164,4 +164,7 @@ export default {
   .icon-active {
     color: #000
   }
+  button {
+    background: #0000;
+  }
 </style>
