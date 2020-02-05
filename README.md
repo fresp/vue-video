@@ -1,4 +1,4 @@
-# bagiData FE Test Case
+# bagidata.com FE Test Case
 
 ## Project setup
 ```
